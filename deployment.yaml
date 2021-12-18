@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deleteme1
+spec:
+  selector:
+    matchLabels:
+      app: deleteme1
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: deleteme1
+    spec:
+      containers:
+      - name: deleteme1
+        image: us-east1-docker.pkg.dev/argotinkering/my-docker-repo1/app-deleteme1
+        ports:
+        - containerPort: 3000
