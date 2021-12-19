@@ -7,7 +7,7 @@ spec:
   project: app2
 
   source:
-    repoURL: https://gitlab.com/nanuchi/argocd-app-config.git
+    repoURL: https://github.com/rmemory/gitops-app2-manifests.git
     targetRevision: HEAD
     path: dev
   destination: 
